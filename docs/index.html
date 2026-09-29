@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RahiTunes — Ad-Free Music Streaming & Offline Player for Android</title>
+    <meta name="description" content="RahiTunes is a modern, open-source Android music player featuring ad-free YouTube Music streaming, synchronized lyrics, SponsorBlock, and Material You design.">
+    <meta name="theme-color" content="#6750A4">
+
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f3edf7',
+                            100: '#e8def8',
+                            500: '#6750A4',
+                            600: '#523d8a',
+                            700: '#3e2c6f',
+                            800: '#2b1b54',
+                            900: '#1d0f3b',
+                            accent: '#d0bcff'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- Background Gradient Glows -->
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-7xl h-96 bg-brand-500/15 blur-[120px] pointer-events-none rounded-full"></div>
+    <div class="fixed bottom-0 right-10 w-96 h-96 bg-purple-600/10 blur-[140px] pointer-events-none rounded-full"></div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80 transition-all">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-brand-600 to-purple-400 p-[2px] shadow-lg shadow-brand-500/20">
+                    <div class="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
+                        <i data-lucide="music" class="w-5 h-5 text-brand-accent"></i>
+                    </div>
+                </div>
+                <span class="text-xl font-bold tracking-tight bg-gradient-to-r from-white via-slate-200 to-brand-accent bg-clip-text text-transparent">RahiTunes</span>
+            </div>
+
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#features" class="hover:text-brand-accent transition-colors">Features</a>
+                <a href="#installation" class="hover:text-brand-accent transition-colors">Install Guide</a>
+                <a href="#faq" class="hover:text-brand-accent transition-colors">FAQ</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <a id="githubBtn" href="https://github.com/rahitunes/RahiTunes" target="_blank" class="p-2.5 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-slate-300 hover:text-white transition-all">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                </a>
+                <a id="navDownloadBtn" href="#download" class="px-4 py-2.5 rounded-xl bg-brand-500 hover:bg-brand-600 text-white font-medium text-sm shadow-lg shadow-brand-500/25 hover:shadow-brand-500/40 transition-all flex items-center gap-2">
+                    <i data-lucide="download" class="w-4 h-4"></i>
+                    <span>Get APK</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-16 md:pt-32 md:pb-24 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-accent text-xs md:text-sm font-medium mb-8 backdrop-blur-sm">
+                <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Open Source • Ad-Free • Material You</span>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight md:leading-none mb-6">
+                Your Music, Unlimited & <br class="hidden sm:inline">
+                <span class="bg-gradient-to-r from-brand-accent via-purple-300 to-indigo-400 bg-clip-text text-transparent">Without Interruption.</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+                Stream millions of songs ad-free, view time-synchronized lyrics, skip sponsor segments, and cache tracks for offline listening.
+            </p>
+
+            <div id="download" class="flex flex-col sm:flex-row items-center justify-center gap-4 max-w-md mx-auto">
+                <a id="mainDownloadBtn" href="https://github.com/rahitunes/RahiTunes/releases/latest" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-2xl bg-gradient-to-r from-brand-500 to-purple-600 hover:from-brand-600 hover:to-purple-700 text-white font-semibold text-base shadow-xl shadow-brand-500/30 hover:shadow-brand-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-3">
+                    <i data-lucide="download" class="w-5 h-5"></i>
+                    <div class="text-left">
+                        <div class="text-xs font-normal text-purple-200">Download for Android</div>
+                        <div class="leading-none text-sm font-bold">Download APK <span id="latestVersionBadge" class="text-xs font-normal opacity-80">(v1.0.0)</span></div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/rahitunes/RahiTunes" target="_blank" class="w-full sm:w-auto px-6 py-4 rounded-2xl border border-slate-800 hover:border-slate-700 bg-slate-900/80 hover:bg-slate-800 text-slate-200 hover:text-white font-medium text-sm transition-all flex items-center justify-center gap-2">
+                    <i data-lucide="github" class="w-5 h-5"></i>
+                    <span>Source Code</span>
+                </a>
+            </div>
+
+            <div class="mt-4 text-xs text-slate-500">
+                Requires Android 7.0 (API 24) or higher • Free & Privacy-friendly
+            </div>
+        </div>
+    </section>
+
+    <!-- App Screenshots / Preview Mockup -->
+    <section class="py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="relative rounded-3xl border border-slate-800 bg-slate-900/40 p-4 md:p-8 backdrop-blur-xl shadow-2xl shadow-purple-950/20 overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+                    <!-- Feature Card Preview 1 -->
+                    <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                            <i data-lucide="headphones" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white">Lossless Background Audio</h3>
+                        <p class="text-xs text-slate-400">Seamless background playback with lockscreen notification controls and hardware media key support.</p>
+                    </div>
+
+                    <!-- Feature Card Preview 2 -->
+                    <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col gap-3 md:scale-105 border-brand-500/40 shadow-lg shadow-brand-500/10">
+                        <div class="w-10 h-10 rounded-xl bg-brand-500/20 flex items-center justify-center text-brand-accent">
+                            <i data-lucide="sparkles" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white">Dynamic Material You</h3>
+                        <p class="text-xs text-slate-400">Adaptive Jetpack Compose UI that dynamically extracts accent colors from album artwork.</p>
+                    </div>
+
+                    <!-- Feature Card Preview 3 -->
+                    <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 flex flex-col gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400">
+                            <i data-lucide="mic-2" class="w-5 h-5"></i>
+                        </div>
+                        <h3 class="font-bold text-lg text-white">Synced Lyrics & Translation</h3>
+                        <p class="text-xs text-slate-400">Real-time synchronized karaoke lyrics powered by LrcLib and KuGou integration.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detailed Features Grid -->
+    <section id="features" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold mb-4">Built for Music Lovers</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Designed with modern Android technology, zero bloatware, and maximum privacy.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/30 transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-accent mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">100% Ad-Free</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Enjoy non-stop music playback without any banner ads, video promotions, or commercial interruptions.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/30 transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-accent mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="zap" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">SponsorBlock</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Automatically skip non-music intros, outros, silence, and sponsor segments in music videos.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/30 transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-accent mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="hard-drive" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Offline Caching</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Cache your favorite playlists and songs locally so you can keep listening even when offline.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/30 transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-accent mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="sliders" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Audio Equalizer</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fine-tune your sound with system equalizer integration, bass boost, and custom audio effects.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/30 transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-accent mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="repeat" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">In-App Updates</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Stay up to date with direct GitHub release notifications inside the app so you never miss new features.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="p-8 rounded-3xl bg-slate-900/60 border border-slate-800 hover:border-brand-500/30 transition-all hover:-translate-y-1 group">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center text-brand-accent mb-6 group-hover:scale-110 transition-transform">
+                        <i data-lucide="code-2" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Open Source</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fully open-source codebase built with Jetpack Compose, ExoPlayer, and Kotlin Coroutines.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation Guide -->
+    <section id="installation" class="py-20 px-6 bg-slate-900/30 border-y border-slate-800/80">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">How to Install RahiTunes</h2>
+                <p class="text-slate-400">Simple 3-step guide to installing the APK on your Android phone.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-500/20 text-brand-accent font-bold text-lg flex items-center justify-center mb-4">1</div>
+                    <h4 class="font-bold mb-2">Download APK</h4>
+                    <p class="text-xs text-slate-400">Click the <strong>Download APK</strong> button above to download the latest release build to your device.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-500/20 text-brand-accent font-bold text-lg flex items-center justify-center mb-4">2</div>
+                    <h4 class="font-bold mb-2">Allow Unknown Sources</h4>
+                    <p class="text-xs text-slate-400">When prompted by Android, tap <strong>Settings</strong> and enable <i>"Allow from this source"</i> for your browser.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center flex flex-col items-center">
+                    <div class="w-12 h-12 rounded-full bg-brand-500/20 text-brand-accent font-bold text-lg flex items-center justify-center mb-4">3</div>
+                    <h4 class="font-bold mb-2">Install & Listen</h4>
+                    <p class="text-xs text-slate-400">Tap <strong>Install</strong>, open RahiTunes, and start listening to your favorite tracks!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-6">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            </div>
+
+            <div class="space-y-4">
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
+                    <h3 class="font-bold text-lg mb-2">Is RahiTunes completely free?</h3>
+                    <p class="text-slate-400 text-sm">Yes, RahiTunes is 100% free and open-source software with no subscriptions, in-app purchases, or ads.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
+                    <h3 class="font-bold text-lg mb-2">Is it safe to install APK files directly?</h3>
+                    <p class="text-slate-400 text-sm">Yes! RahiTunes' source code is open and transparent on GitHub. You build or download official release APKs directly compiled from source.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
+                    <h3 class="font-bold text-lg mb-2">How do I get app updates?</h3>
+                    <p class="text-slate-400 text-sm">RahiTunes features an in-app updater that checks GitHub for new releases and notifies you when an update is ready.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800/80 text-slate-500 text-center text-sm">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© <span id="year">2026</span> RahiTunes. Built with Kotlin & Jetpack Compose.</p>
+            <div class="flex items-center gap-6">
+                <a href="https://github.com/rahitunes/RahiTunes" target="_blank" class="hover:text-slate-300 transition-colors">GitHub</a>
+                <a href="#download" class="hover:text-slate-300 transition-colors">Download</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Icons & Dynamic Release Fetcher -->
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Optional: Fetch latest release from GitHub API dynamically
+        const GITHUB_REPO = "rahitunes/RahiTunes";
+        fetch(`https://api.github.com/repos/${GITHUB_REPO}/releases/latest`)
+            .then(res => res.json())
+            .then(data => {
+                if (data && data.tag_name) {
+                    const badge = document.getElementById('latestVersionBadge');
+                    if (badge) badge.textContent = `(${data.tag_name})`;
+
+                    const apkAsset = data.assets && data.assets.find(a => a.name.endsWith('.apk') || a.name.endsWith('.aab'));
+                    if (apkAsset && apkAsset.browser_download_url) {
+                        const downloadBtn = document.getElementById('mainDownloadBtn');
+                        if (downloadBtn) downloadBtn.href = apkAsset.browser_download_url;
+                    }
+                }
+            })
+            .catch(err => console.log('GitHub API fetch fallback to releases page', err));
+    </script>
+</body>
+</html>

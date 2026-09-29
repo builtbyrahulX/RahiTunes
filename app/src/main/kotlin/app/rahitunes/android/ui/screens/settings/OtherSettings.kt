@@ -213,16 +213,10 @@ fun OtherSettings() {
 
                     try {
                         activityResultLauncher.launch(
-                            Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS).apply {
-                                data = "package:${context.packageName}".toUri()
-                            }
+                            Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS)
                         )
-                    } catch (_: ActivityNotFoundException) {
-                        try {
-                            activityResultLauncher.launch(Intent(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS))
-                        } catch (_: ActivityNotFoundException) {
-                            context.toast(errorMsg)
-                        }
+                    } catch (_: Exception) {
+                        context.toast(errorMsg)
                     }
                 },
                 isEnabled = !isIgnoringBatteryOptimizations

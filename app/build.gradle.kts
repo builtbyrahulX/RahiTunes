@@ -68,7 +68,6 @@ android {
         }
 
         release {
-            versionNameSuffix = "-RELEASE"
             isMinifyEnabled = true
             isShrinkResources = true
             manifestPlaceholders["appName"] = "RahiTunes"
