@@ -38,9 +38,9 @@ import app.rahitunes.android.ui.components.MusicBars
 import app.rahitunes.core.ui.LocalAppearance
 import coil3.compose.AsyncImage
 
-private const val GITHUB_PROFILE_URL = "https://github.com/rahibladex"
-private const val PORTFOLIO_URL = "https://rahibladex-portfolio.vercel.app/"
-private const val EMAIL_URL = "mailto:rahibladex@gmail.com"
+private const val GITHUB_PROFILE_URL = "https://github.com/vertex.dev"
+private const val PORTFOLIO_URL = "https://vertex.dev-portfolio.vercel.app/"
+private const val EMAIL_URL = "mailto:vertex.dev@gmail.com"
 private const val AVATAR_URL = "https://avatars.githubusercontent.com/u/132987103?v=4"
 
 @Composable
@@ -156,7 +156,7 @@ fun About() = SettingsCategoryScreen(
                                 .padding(horizontal = 6.dp, vertical = 2.dp)
                         ) {
                             BasicText(
-                                text = "@rahibladex",
+                                text = "@vertex.dev",
                                 style = typography.xxs.copy(
                                     color = Color(0xFF00F0FF),
                                     fontWeight = FontWeight.Bold,
@@ -336,7 +336,7 @@ fun About() = SettingsCategoryScreen(
             tag = "Kotlin / AI",
             tagColor = Color(0xFFFF0055),
             iconRes = R.drawable.equalizer,
-            onClick = { uriHandler.openUri("https://github.com/rahibladex/AcousticGuard") }
+            onClick = { uriHandler.openUri("https://github.com/vertex.dev/AcousticGuard") }
         )
 
         ProjectCard(
@@ -345,7 +345,7 @@ fun About() = SettingsCategoryScreen(
             tag = "Simulation / AI",
             tagColor = Color(0xFF8B5CF6),
             iconRes = R.drawable.globe,
-            onClick = { uriHandler.openUri("https://github.com/rahibladex/Cortex-City") }
+            onClick = { uriHandler.openUri("https://github.com/vertex.dev/Cortex-City") }
         )
     }
 
@@ -379,19 +379,19 @@ fun About() = SettingsCategoryScreen(
 
         SettingsEntry(
             title = "Developer GitHub Profile",
-            text = "https://github.com/rahibladex",
+            text = "https://github.com/vertex.dev",
             onClick = { uriHandler.openUri(GITHUB_PROFILE_URL) }
         )
 
         SettingsEntry(
             title = "Portfolio Website",
-            text = "https://rahibladex-portfolio.vercel.app/",
+            text = "https://vertex.dev-portfolio.vercel.app/",
             onClick = { uriHandler.openUri(PORTFOLIO_URL) }
         )
 
         SettingsEntry(
             title = "Direct Inquiries",
-            text = "rahibladex@gmail.com",
+            text = "vertex.dev@gmail.com",
             onClick = { uriHandler.openUri(EMAIL_URL) }
         )
     }

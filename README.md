@@ -3,7 +3,7 @@
     <h1>🎵 RahiTunes</h1>
     <p><b>A free, open-source Android music streaming app — no ads, no subscriptions, just music.</b></p>
 
-[![GitHub](https://img.shields.io/badge/GitHub-rahibladex-181717?style=for-the-badge&logo=github)](https://github.com/rahibladex)
+[![GitHub](https://img.shields.io/badge/GitHub-vertex.dev-181717?style=for-the-badge&logo=github)](https://github.com/vertex.dev)
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
 [![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.1-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
@@ -94,7 +94,7 @@ Stream music, discover new artists, create playlists, and enjoy hi-fi audio qual
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/rahibladex/RahiTunes.git
+git clone https://github.com/vertex.dev/RahiTunes.git
 cd RahiTunes
 
 # 2. Build the debug APK
@@ -154,9 +154,9 @@ Made with ❤️ by **RahiBladeX**
 | | |
 |---|---|
 | **Developer** | RahiBladeX |
-| **GitHub** | [@rahibladex](https://github.com/rahibladex) |
-| **Repository** | [rahibladex/RahiTunes](https://github.com/rahibladex/RahiTunes) |
-| **Latest Release** | [RahiTunes v1.0](https://github.com/rahibladex/RahiTunes/releases/tag/v1.0) |
+| **GitHub** | [@vertex.dev](https://github.com/vertex.dev) |
+| **Repository** | [vertex.dev/RahiTunes](https://github.com/vertex.dev/RahiTunes) |
+| **Latest Release** | [RahiTunes v1.0](https://github.com/vertex.dev/RahiTunes/releases/tag/v1.0) |
 
 </div>
 
@@ -166,7 +166,7 @@ Made with ❤️ by **RahiBladeX**
 
 If you enjoy using RahiTunes, consider:
 - ⭐ **Starring** this repository
-- 🐛 **Reporting bugs** via [Issues](https://github.com/rahibladex/RahiTunes/issues)
+- 🐛 **Reporting bugs** via [Issues](https://github.com/vertex.dev/RahiTunes/issues)
 - 📣 **Sharing** the app with friends
 - 🤝 **Contributing** code or translations
 
@@ -176,7 +176,7 @@ If you enjoy using RahiTunes, consider:
 
 ```
 RahiTunes - Free & Open Source Music Streaming for Android
-Copyright (C) 2024-2026 rahibladex
+Copyright (C) 2024-2026 vertex.dev
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -192,7 +192,7 @@ GNU General Public License for more details.
 ---
 
 <div align="center">
-    <p>Made with ❤️ by <a href="https://github.com/rahibladex">rahibladex</a></p>
+    <p>Made with ❤️ by <a href="https://github.com/vertex.dev">vertex.dev</a></p>
 </div>
 <!-- update 0 -->
 <!-- update 1 -->
