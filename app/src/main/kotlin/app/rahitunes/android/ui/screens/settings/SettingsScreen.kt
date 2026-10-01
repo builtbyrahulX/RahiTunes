@@ -554,7 +554,7 @@ fun SettingsCategoryScreen(
             contentAlignment = Alignment.Center
         ) {
             BasicText(
-                text = "Made with love by RahiBladeX",
+                text = "Made with love by vertex.dev",
                 style = typography.xs.copy(
                     color = Color(0xFFFF9100),
                     fontWeight = FontWeight.Bold

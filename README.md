@@ -149,11 +149,11 @@ Contributions are welcome! Feel free to:
 
 <div align="center">
 
-Made with ❤️ by **RahiBladeX**
+Made with ❤️ by **vertex.dev**
 
 | | |
 |---|---|
-| **Developer** | RahiBladeX |
+| **Developer** | vertex.dev |
 | **GitHub** | [@vertex.dev](https://github.com/vertex.dev) |
 | **Repository** | [vertex.dev/RahiTunes](https://github.com/vertex.dev/RahiTunes) |
 | **Latest Release** | [RahiTunes v1.0](https://github.com/vertex.dev/RahiTunes/releases/tag/v1.0) |

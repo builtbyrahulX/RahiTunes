@@ -51,7 +51,7 @@ fun About() = SettingsCategoryScreen(
     val (colorPalette, typography) = LocalAppearance.current
     val uriHandler = LocalUriHandler.current
 
-    // 1. DEVELOPER HERO CARD (Rahul Jangra / RAHIBLADEX)
+    // 1. DEVELOPER HERO CARD (Rahul Jangra / VERTEX.DEV)
     Box(
         modifier = Modifier
             .fillMaxWidth()
