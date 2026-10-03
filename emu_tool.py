@@ -7,13 +7,13 @@ def run(cmd):
     return p.stdout
 
 def screenshot(name):
-    path = f"/home/vertex.dev/.gemini/antigravity-ide/brain/a0c3970b-1988-4535-952d-84d727e62725/{name}"
-    run(f"/home/vertex.dev/Android/Sdk/platform-tools/adb -s emulator-5554 shell screencap -p /sdcard/{name}")
-    run(f"/home/vertex.dev/Android/Sdk/platform-tools/adb -s emulator-5554 pull /sdcard/{name} {path}")
+    path = f"/home/builtbyrahulX/.gemini/antigravity-ide/brain/a0c3970b-1988-4535-952d-84d727e62725/{name}"
+    run(f"/home/builtbyrahulX/Android/Sdk/platform-tools/adb -s emulator-5554 shell screencap -p /sdcard/{name}")
+    run(f"/home/builtbyrahulX/Android/Sdk/platform-tools/adb -s emulator-5554 pull /sdcard/{name} {path}")
     print(f"Screenshot saved to {path}")
 
 def tap(x, y):
-    run(f"/home/vertex.dev/Android/Sdk/platform-tools/adb -s emulator-5554 shell input tap {x} {y}")
+    run(f"/home/builtbyrahulX/Android/Sdk/platform-tools/adb -s emulator-5554 shell input tap {x} {y}")
     print(f"Tapped ({x}, {y})")
 
 if __name__ == "__main__":

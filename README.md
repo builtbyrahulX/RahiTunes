@@ -3,7 +3,7 @@
     <h1>🎵 RahiTunes</h1>
     <p><b>A free, open-source Android music streaming app — no ads, no subscriptions, just music.</b></p>
 
-[![GitHub](https://img.shields.io/badge/GitHub-vertex.dev-181717?style=for-the-badge&logo=github)](https://github.com/builtbyrahulX)
+[![GitHub](https://img.shields.io/badge/GitHub-builtbyrahulX-181717?style=for-the-badge&logo=github)](https://github.com/builtbyrahulX)
 [![License](https://img.shields.io/badge/License-GPL--3.0-blue?style=for-the-badge)](LICENSE)
 [![Android](https://img.shields.io/badge/Platform-Android-3DDC84?style=for-the-badge&logo=android&logoColor=white)](https://developer.android.com)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.1-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](https://kotlinlang.org)
@@ -149,13 +149,13 @@ Contributions are welcome! Feel free to:
 
 <div align="center">
 
-Made with ❤️ by **vertex.dev**
+Made with ❤️ by **builtbyrahulX**
 
 | | |
 |---|---|
-| **Developer** | vertex.dev |
-| **GitHub** | [@vertex.dev](https://github.com/builtbyrahulX) |
-| **Repository** | [vertex.dev/RahiTunes](https://github.com/builtbyrahulX/RahiTunes) |
+| **Developer** | builtbyrahulX |
+| **GitHub** | [@builtbyrahulX](https://github.com/builtbyrahulX) |
+| **Repository** | [builtbyrahulX/RahiTunes](https://github.com/builtbyrahulX/RahiTunes) |
 | **Latest Release** | [RahiTunes v1.0](https://github.com/builtbyrahulX/RahiTunes/releases/tag/v1.0) |
 
 </div>
@@ -176,7 +176,7 @@ If you enjoy using RahiTunes, consider:
 
 ```
 RahiTunes - Free & Open Source Music Streaming for Android
-Copyright (C) 2024-2026 vertex.dev
+Copyright (C) 2024-2026 builtbyrahulX
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -192,7 +192,7 @@ GNU General Public License for more details.
 ---
 
 <div align="center">
-    <p>Made with ❤️ by <a href="https://github.com/builtbyrahulX">vertex.dev</a></p>
+    <p>Made with ❤️ by <a href="https://github.com/builtbyrahulX">builtbyrahulX</a></p>
 </div>
 <!-- update 0 -->
 <!-- update 1 -->

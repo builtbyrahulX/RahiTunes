@@ -152,7 +152,7 @@
     <string name="view_album">Погледај албум</string>
     <string name="view_playlist">Погледај плејлисту</string>
     <string name="search_placeholder">Унесите име</string>
-    <string name="format_version_credits">v%1$s од vertex.dev</string>
+    <string name="format_version_credits">v%1$s од builtbyrahulX</string>
     <string name="social">Друштвено</string>
     <string name="contact">Контакт</string>
     <string name="github">GitHub</string>

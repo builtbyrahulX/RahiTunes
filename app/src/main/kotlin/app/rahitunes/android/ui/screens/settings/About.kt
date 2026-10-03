@@ -38,9 +38,9 @@ import app.rahitunes.android.ui.components.MusicBars
 import app.rahitunes.core.ui.LocalAppearance
 import coil3.compose.AsyncImage
 
-private const val GITHUB_PROFILE_URL = "https://github.com/vertex.dev"
-private const val PORTFOLIO_URL = "https://vertex.dev-portfolio.vercel.app/"
-private const val EMAIL_URL = "mailto:vertex.dev@gmail.com"
+private const val GITHUB_PROFILE_URL = "https://github.com/builtbyrahulX"
+private const val PORTFOLIO_URL = "https://builtbyrahulX-portfolio.vercel.app/"
+private const val EMAIL_URL = "mailto:builtbyrahulX@gmail.com"
 private const val AVATAR_URL = "https://avatars.githubusercontent.com/u/132987103?v=4"
 
 @Composable
@@ -51,7 +51,7 @@ fun About() = SettingsCategoryScreen(
     val (colorPalette, typography) = LocalAppearance.current
     val uriHandler = LocalUriHandler.current
 
-    // 1. DEVELOPER HERO CARD (Rahul Jangra / VERTEX.DEV)
+    // 1. DEVELOPER HERO CARD (Rahul Jangra / BUILTBYRAHULX)
     Box(
         modifier = Modifier
             .fillMaxWidth()
@@ -156,7 +156,7 @@ fun About() = SettingsCategoryScreen(
                                 .padding(horizontal = 6.dp, vertical = 2.dp)
                         ) {
                             BasicText(
-                                text = "@vertex.dev",
+                                text = "@builtbyrahulX",
                                 style = typography.xxs.copy(
                                     color = Color(0xFF00F0FF),
                                     fontWeight = FontWeight.Bold,
@@ -336,7 +336,7 @@ fun About() = SettingsCategoryScreen(
             tag = "Kotlin / AI",
             tagColor = Color(0xFFFF0055),
             iconRes = R.drawable.equalizer,
-            onClick = { uriHandler.openUri("https://github.com/vertex.dev/AcousticGuard") }
+            onClick = { uriHandler.openUri("https://github.com/builtbyrahulX/AcousticGuard") }
         )
 
         ProjectCard(
@@ -345,7 +345,7 @@ fun About() = SettingsCategoryScreen(
             tag = "Simulation / AI",
             tagColor = Color(0xFF8B5CF6),
             iconRes = R.drawable.globe,
-            onClick = { uriHandler.openUri("https://github.com/vertex.dev/Cortex-City") }
+            onClick = { uriHandler.openUri("https://github.com/builtbyrahulX/Cortex-City") }
         )
     }
 
@@ -379,19 +379,19 @@ fun About() = SettingsCategoryScreen(
 
         SettingsEntry(
             title = "Developer GitHub Profile",
-            text = "https://github.com/vertex.dev",
+            text = "https://github.com/builtbyrahulX",
             onClick = { uriHandler.openUri(GITHUB_PROFILE_URL) }
         )
 
         SettingsEntry(
             title = "Portfolio Website",
-            text = "https://vertex.dev-portfolio.vercel.app/",
+            text = "https://builtbyrahulX-portfolio.vercel.app/",
             onClick = { uriHandler.openUri(PORTFOLIO_URL) }
         )
 
         SettingsEntry(
             title = "Direct Inquiries",
-            text = "vertex.dev@gmail.com",
+            text = "builtbyrahulX@gmail.com",
             onClick = { uriHandler.openUri(EMAIL_URL) }
         )
     }

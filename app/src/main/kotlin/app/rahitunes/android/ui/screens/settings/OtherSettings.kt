@@ -235,7 +235,7 @@ fun OtherSettings() {
                 title = stringResource(R.string.need_help),
                 text = stringResource(R.string.need_help_description),
                 onClick = {
-                    uriHandler.openUri("https://github.com/vertex.dev/RahiTunes")
+                    uriHandler.openUri("https://github.com/builtbyrahulX/RahiTunes")
                 }
             )
 
